@@ -47,7 +47,7 @@ services:
   command-service:
     build: ./command-service
     ports:
-      - '8085:8080'
+      - '8080:8080'
     depends_on:
       write_db:
         condition: service_healthy
